@@ -1,8 +1,8 @@
 /** t3ssel8or's semi-intuitive non-linear interpolator
  * A non-linear keyframeless interpolation thingy
  * Code from t3ssel8r, implemented by Benro75
- * Version: 1.3
- * Last edited: 2025/09/07
+ * Version: 1.3.1
+ * Last edited: 2025/09/10
  */
 
 Interp2D n;
@@ -17,7 +17,7 @@ float S; // A spacer
 float[] G; // The values in the graph
 
 void setup() {
-  //size(500, 400);
+  fullScreen();
   
   textSize(30);
   S = textWidth("speed");
@@ -36,7 +36,7 @@ void setup() {
   z = new Slider(S + 20, 190, width - S*2 - 20, 30, Z/3.0);
   r = new Slider(S + 20, 240, width - S*2 - 20, 30, (R+3)/6);
   textSize(26);
-  rset = new Button(width * 7/8 - S, 45, textWidth("reset") + 40, 30);
+  rset = new Button(width - S - textWidth("reset") - 40, 45, textWidth("reset") + 40, 30);
 }
 
 void draw() {

@@ -29,4 +29,9 @@ Made the gui scale better with the screensize
 # 2025/09/07
 v. 1.3
 Added a graph for visualizing the interpolation
+
+# 2025/09/10
+v. 1.3.1
+Changed a few things so it actually works on pc.
+I should really switch to real Java soon  t-t
 */
